@@ -8,6 +8,10 @@ export const music = () => {
 
     soundTrack.autoplay = true;
 
+    if (soundTrack.play()) {
+        text.innerHTML = 'Stepan Pennsbroke "A man without love"';
+    }
+
     play.addEventListener('click', () => {
         soundTrack.play();
         text.style.display = 'inline-block';
